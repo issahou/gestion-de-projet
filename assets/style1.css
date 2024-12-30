@@ -1,0 +1,153 @@
+/* style.css */
+
+/* Style de base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Barre de navigation */
+nav {
+    background-color: #007bff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+/* Conteneur principal */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Titres */
+h1, h2, h3 {
+    color: #007bff;
+}
+
+/* Cartes de projets et de tâches */
+.card {
+    background: #fff;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+/* Boutons */
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+    margin: 0.5rem 0;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Tableaux */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Pied de page */
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Styles pour le formulaire de modification de tâche, ajout d'utilisateur et modification d'utilisateur */
+.form-modifier-tache,
+.form-ajouter-utilisateur,
+.form-modifier-utilisateur,
+.form-ajouter-tache {
+    background: #fff;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-modifier-tache h2,
+.form-ajouter-utilisateur h2,
+.form-modifier-utilisateur h2,
+.form-ajouter-tache h2 {
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.input-field {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.textarea-field {
+    height: 150px;
+    resize: vertical;
+}
+
+.select-field {
+    appearance: none;
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iIzAwN0JGNyIgdmlld0JveD0iMCAwIDE2IDE2Ij48cGF0aCBkPSJNMTIuNTg4IDYuNjQybC00LjU4NyA0LjU4N2MtLjE1LjE1LS4zNS4yMjUtLjU1LjIyNXMtLjQwNi0uMDc1LS41NS0uMjI1bC00LjU4Ny00LjU4N2MtLjMtLjMtLjMtLjc5MyAwLTEuMDkycy43OTMtLjMwMSAxLjA5MyAwbDQuMDQzIDQuMDQzbDQuMDQzLTQuMDQzYy4zLS4zIDEuMDkxLS4zIDEuMzk4IDBsLjQwNC40MDRjLjI5OS4zLjI5OS43OTMgMCAxLjA5MnpNLjkwNCA5LjM1OGMtLjMwMS0uMzAxLS4zMDEtLjc5MyAwLTEuMDkzbC40MDMtLjQwNGMuMy0uMzAxLjc5My0uMzAxIDEuMDk0IDBsNC4wNDMgNC4wNDMgNC4wNDMtNC4wNDNjLjMtLjMgLjc5My0uMzAxIDEuMDkyIDBsLjQwNC40MDNjLjMwMS4zMDEuMzAxLjc5MyAwIDEuMDkzbC00LjU4NyA0LjU4N2MtLjE1LjE1LS4zNS4yMjUtLjU1LjIyNXMtLjQwNi0uMDc1LS41NS0uMjI1bC00LjU4Ny00LjU4N2MtLjMwMS0uMzAxLS43OTMtLjMwMS0xLjA5NCAwbC00LjU4Ny00LjU4N3oiLz48L3N2Zz4=') no-repeat right 10px center;
+    background-color: white;
+    background-size: 10px;
+}

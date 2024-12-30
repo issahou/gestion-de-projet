@@ -1,0 +1,337 @@
+/* style.css */
+
+/* Style de base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Barre de navigation */
+nav {
+    background-color: #007bff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+/* Conteneur principal */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Titres */
+h1, h2, h3 {
+    color: #007bff;
+    text-align: center;
+}
+
+/* Cartes de sections */
+.card {
+    background: #fff;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+/* Boutons */
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+    margin: 0.5rem 0;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Tableaux */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Pied de page */
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Styles pour les formulaires */
+.form-modifier-tache,
+.form-ajouter-utilisateur,
+.form-modifier-utilisateur,
+.form-ajouter-commentaire,
+.form-ajouter-tache,
+.form-ajouter-projet {
+    background: #fff;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-modifier-tache h2,
+.form-ajouter-utilisateur h2,
+.form-modifier-utilisateur h2,
+.form-ajouter-commentaire h2,
+.form-ajouter-tache h2,
+.form-ajouter-projet h2 {
+    color: #007bff;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.input-field {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.textarea-field {
+    height: 150px;
+    resize: vertical;
+}
+
+.select-field {
+    appearance: none;
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iIzAwN0JGNyIgdmlld0JveD0iMCAwIDE2IDE2Ij48cGF0aCBkPSJNMTIuNTg4IDYuNjQybC00LjU4NyA0LjU4N2MtLjE1LjE1LS4zNS4yMjUtLjU1LjIyNXMtLjQwNi0uMDc1LS41NS0uMjI1bC00LjU4Ny00LjU4N2MtLjMtLjMtLjMtLjc5MyAwLTEuMDkycy43OTMtLjMwMSAxLjA5MyAwbDQuMDQzIDQuMDQzbDQuMDQzLTQuMDQzYy4zLS4zIDEuMDkxLS4zIDEuMzk4IDBsLjQwNC40MDRjLjI5OS4zLjI5OS43OTMgMCAxLjA5MnpNLjkwNCA5LjM1OGMtLjMwMS0uMzAxLS4zMDEtLjc5MyAwLTEuMDkzbC40MDMtLjQwNGMuMy0uMzAxLjc5My0uMzAxIDEuMDk0IDBsNC4wNDMgNC4wNDMgNC4wNDMtNC4wNDNjLjMtLjMgLjc5My0uMzAxIDEuMDkyIDBsLjQwNC40MDNjLjMwMS4zMDEuMzAxLjc5MyAwIDEuMDkzbC00LjU4NyA0LjU4N2MtLjE1LjE1LS4zNS4yMjUtLjU1LjIyNXMtLjQwNi0uMDc1LS41NS0uMjI1bC00LjU4Ny00LjU4N2MtLjMwMS0uMzAxLS43OTMtLjMwMS0xLjA5NCAwbC00LjU4Ny00LjU4N3oiLz48L3N2Zz4=') no-repeat right 10px center;
+    background-color: white;
+    background-size: 10px;
+}
+
+.form-group .input-field:focus, 
+.form-group .textarea-field:focus, 
+.form-group .select-field:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+/* style.css */
+
+/* Style des commentaires */
+.comment-section {
+    margin-top: 1rem;
+}
+
+.comment-section h3 {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-bottom: 0.5rem;
+}
+
+.comment {
+    border-top: 1px solid #ddd;
+    padding-top: 0.5rem;
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.comment .icon {
+    margin-right: 0.5rem;
+}
+
+.comment .icon img {
+    width: 20px;
+    height: 20px;
+}
+
+.comment .content {
+    max-width: 90%;
+}
+
+.comment .content .author {
+    font-weight: bold;
+}
+
+.comment .content .date {
+    color: #888;
+    font-size: 0.9rem;
+}
+/* style.css */
+
+/* Style pour les boutons alignés */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+/* style.css */
+
+/* Style pour les boutons alignés */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+/* Style pour les boutons de commentaires */
+.comment-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 0.5rem;
+}
+.chart-container {	
+ width: 100%;
+ height: 300px;
+ margin-top: 1rem;
+ text-align: center; 
+ 
+  <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 2rem;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+        h1 {
+            color: #007BFF;
+            font-size: 3rem;
+            margin-bottom: 1rem; /* Ajustez cette valeur pour un espacement supplémentaire */
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .section {
+            padding: 2rem;
+            background-color: #007BFF;
+            color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            margin-bottom: 1rem;
+        }
+        .section p {
+            margin-bottom: 1.5rem;
+        }
+        .section a {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            color: #fff;
+            background-color: #0056b3;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .section a:hover {
+            background-color: #003d80;
+        }
+        .search-container {
+            margin-top: 2rem; /* Ajustez cette valeur pour un espacement supplémentaire */
+            text-align: center;
+        }
+        .search-container input[type="text"] {
+            padding: 0.5rem;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .search-container input[type="submit"] {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: #fff;
+            cursor: pointer;
+        }
+        .search-container input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+   
+ 
+ }
